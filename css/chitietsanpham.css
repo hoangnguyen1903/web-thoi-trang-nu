@@ -1,0 +1,13 @@
+.img-primary {
+  width: 500px;
+  height: 600px;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: zoom-in;
+  border: 1px solid black;
+}
+
+.img-secondary {
+  border: 1px solid black;
+  cursor: pointer;
+}
