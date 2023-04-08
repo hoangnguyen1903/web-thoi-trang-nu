@@ -9,6 +9,7 @@
 
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery-3.6.3.min.js"></script>
+    <script src="../js/dangnhap.js"></script>
     <title>Đăng nhập</title>
   </head>
   <body>
@@ -117,29 +118,65 @@
               </nav>
             </div>
           </div>
-          <div class="row d-flex justify-content-center align-items-center pb-5">
+          <div class="row d-flex justify-content-between pb-5">
+            <div class="col col-lg-7 border border-1 border-dark rounded p-5">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Tên đăng nhập</th>
+                    <th scope="col">Mật khẩu</th>
+                    <th scope="col">Trạng thái</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td class="email">hoang@example.com</td>
+                    <td class="password">hoang@123</td>
+                    <td class="fst-italic status">Không hoạt động</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td class="email">tung@yahoo.com</td>
+                    <td class="password">tung@123456</td>
+                    <td class="fst-italic status">Không hoạt động</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td class="email">hoangtung@gmail.com</td>
+                    <td class="password">hoangtung@123</td>
+                    <td class="fst-italic status">Không hoạt động</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <div class="col col-lg-4 border border-1 border-dark rounded p-5">
               <h2 class="text-center mb-5">ĐĂNG NHẬP</h2>
 
               <form>
-                <div class="form-outline mb-4">
-                  <label class="form-label" for="form2Example1">Tên đăng nhập</label>
+                <div class="form-outline mb-3">
+                  <label class="form-label" for="txtEmail">Tên đăng nhập</label>
                   <input
                     type="email"
-                    id="form2Example1"
+                    id="txtEmail"
                     class="form-control"
                     placeholder="Hãy nhập địa chỉ email của bạn"
+                    required
                   />
+                  <p class="emailErr mb-0 mt-2"></p>
                 </div>
 
-                <div class="form-outline mb-4">
-                  <label class="form-label" for="form2Example2">Mật khẩu</label>
+                <div class="form-outline mb-3">
+                  <label class="form-label" for="txtPassword">Mật khẩu</label>
                   <input
                     type="password"
-                    id="form2Example2"
+                    id="txtPassword"
                     class="form-control"
                     placeholder="Hãy nhập mật khẩu của bạn"
+                    required
                   />
+                  <p class="passwordErr mb-0 mt-2"></p>
                 </div>
 
                 <div class="form-check mb-4">
@@ -149,10 +186,10 @@
 
                 <div class="row mb-4">
                   <div class="col col-lg-6">
-                    <button type="button" class="btn btn-primary btn-block mb-4">Đăng nhập</button>
+                    <input type="submit" value="Đăng nhập" class="btn btn-primary btn-block mb-4" />
                   </div>
                   <div class="col col-lg-6">
-                    <a href="#!">Quên mật khẩu?</a>
+                    <a href="#">Quên mật khẩu?</a>
                   </div>
                 </div>
 

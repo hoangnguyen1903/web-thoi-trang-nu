@@ -1,184 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/thanhtoan.css" />
 
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery-3.6.3.min.js"></script>
-    <title>Thanh toan</title>
-    <style>
-    .vtrWey {
-    height: 3px;
-    width: 100%;
-    background-position-x: -30px;
-    background-size: 116px 3px;
-    background-image: repeating-linear-gradient(45deg,#6fa6d6,#6fa6d6 33px,transparent 0,transparent 41px,#f18d9b 0,#f18d9b 74px,transparent 0,transparent 82px);
-    }
-    .uk7Wpm {
-    padding: 2px 5px;
-    margin-left: 1.5em;
-    color: #ee4d2d;
-    border-radius: 1px;
-    border: 0.5px solid;
-    font-size: 10px;
-    text-transform: capitalize;
-    flex-shrink: 0;
-  }
-._3WkjWD {
-    color: #4080ee;
-    text-transform: capitalize;
-    margin-left: 2.5rem;
-    cursor: pointer;
-}
-.c1\+TQt {
-    height: 38px;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 10px;
-    background-color: transparent;
-    flex: 1;
-    outline: none;
-    font-size: .875rem;
-    min-width: 0;
-    color: #222;
-    border: 0;
-}
-.opacity_text {
-  opacity: 0.7;
-  font-size: 15px;
-  text-align: center;
-}
-.nutDatHang {
-    width: 210px;
-    height: 40px;
-    border: 0;
-    border-radius: 2px;
-    padding: 0;
-    align-self: center!important;
-    text-transform: none!important;
-    background-color: #4080ee;
-    color: white;
-}
-
-
-.jkpRTG {
-    cursor: pointer;
-    position: fixed;
-    z-index: 999;
-    bottom: 40px;
-    right: 40px;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background-color: rgb(0, 96, 255);
-    border-radius: 20px;
-    padding: 8px;
-    box-shadow: 
-}
-</style>
-</head>
-<body>
+    <script src="../js/thanhtoan.js"></script>
+    <title>Thanh toán</title>
+  </head>
+  <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container">
-            <a class="navbar-brand" href="#">
-              <img src="../img/img-logo.png" alt="Logo" width="160" height="50" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Sản phẩm</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Giới thiệu</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Tin tức</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Liên lạc</a>
-                </li>
-              </ul>
-              <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                </li>
-  
-                <li class="nav-item">
-                  <a class="nav-link" href="#"
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-search"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-bag"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="nav-item mr-3">
-                  <a class="nav-link" href="#">Đăng nhập</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Đăng ký</a>
-                </li>
-              </ul>
-            </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="../html/trangchu.html">
+            <img src="../img/img-logo.png" alt="Logo" width="160" height="50" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../html/trangchu.html"
+                  >Trang Chủ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/sanpham.html">Sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/gioithieu.html">Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/tintuc.html">Tin tức</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/lienlac.html">Liên lạc</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../html/sanpham.html"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/giohang.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-bag"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="../html/dangnhap.html">Đăng nhập</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/dangky.html">Đăng ký</a>
+              </li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
     </header>
     <main class="main" style="background-color: #f5f5f5">
-      <div class="container" style="background-color: #f5f5f5;">
-        <div class="row" style="background-color: white;">
+      <div class="container" style="background-color: #f5f5f5">
+        <div class="row py-5">
+          <div class="bg-light">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#" class="text-dark">TRANG CHỦ</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">THANH TOÁN</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <div class="row mb-5" style="background-color: white">
           <div class="d-flex align-items-center">
-            <img class="me-3" src="../img/img-icon-payment-3.jpg" alt="" width= "100px" height="100px">
+            <img
+              class="me-3"
+              src="../img/img-icon-payment-3.jpg"
+              alt=""
+              width="100px"
+              height="100px"
+            />
 
             <div class="ms-0 border-start border-2 border-dark pe-3">
               <div class="d-flex flex-column align-items-start">
@@ -187,241 +135,354 @@
               </div>
             </div>
           </div>
-        </div> 
-        
-        <div class="row justify-content-center" style="background-color: white;">
-          <div class="vtrWey"></div>
-          <div class="col-12 mt-3" style="border-bottom: 1px dashed rgba(0,0,0,.09) ">
-            <div class="d-flex align-items-center text-break ">
-                <img src="../img/img-logo-location2.png" alt="" width="25px" height="25px">
-                <div class="mt-2 ms-2">Địa Chỉ Nhận Hàng</div>
+        </div>
 
+        <div class="row p-3 mb-5" style="background-color: white">
+          <h2 class="mb-5">
+            <span class="border-bottom border-4 border-dark">Địa chỉ nhận hàng</span>
+          </h2>
+          <form>
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Họ và tên</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Hãy nhập họ và tên của bạn"
+              />
             </div>
-            <div class="d-flex align-items-center text-break mb-4 mt-2" style="font-size: 1rem;">
-              <div class="mb-0 ms-3" style="font-weight: bold">Nguyễn Nhật Tùng (+84) 968057301</div>
-              <div class="mb-0 ms-3">12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh</div>
-              <div class=" mb-0 ms-3 me-3 uk7Wpm">Mặc định</div>
-              <div class=" mb-0 ms-4 me-3 _3WkjWD">Thay đổi</div>
-          </div>
-        </div>
-        
-        <div class="row justify-content-center" style="background-color: rgb(255, 255, 255);border-bottom: 1px dashed rgba(0,0,0,.09);" >
-          <div class ="col-md-8 text-center text-md-start">
-            <div>Sản phẩm</div>
-              <div class="d-flex justify-content-start">
-                <img class=" me-2" src="../img/img-shirt-1.jpeg" alt="" width="20px" height="20px"> 
-                <div>ÁO THUN FORM BOXY IN “TAKE TO HEART”</div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Địa chỉ email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Hãy nhập địa chỉ email của bạn"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Số điện thoại</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="Hãy nhập số điện thoại của bạn"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label">Địa chỉ</label>
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="Hãy nhập địa chỉ của bạn"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Nội dung tin nhắn</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Hãy nhập nội dung tin nhắn của bạn"
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <h6 class="pb-2">Chọn hình thức vận chuyển</h6>
+              <div class="form-group mb-3">
+                <label class="radio-inline pe-3">
+                  <input type="radio" name="optradio" checked />Giao hàng nhanh
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" class="ml-5" />Giao hàng tiết kiệm
+                </label>
               </div>
-              <div class="d-flex justify-content-start">
-                <img class=" me-2" src="../img/img-dress-1.jpeg" alt="" width="20px" height="20px"> 
-                <div>ÁO THUN FORM BOXY IN “TAKE TO HEART”</div>
+            </div>
+            <div class="mb-3">
+              <h6 class="pb-2">Mã giảm giá</h6>
+              <div class="form-group mb-3">
+                <div class="col input-group rounded">
+                  <input
+                    type="search"
+                    class="form-control rounded"
+                    id="form-search"
+                    placeholder="Hãy nhập mã giảm giá của bạn"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+                  />
+                  <span class="input-group-text border-0 bg-dark" id="search-addon">
+                    <a class="nav-link text-white" href="#">Xác nhận</a>
+                  </span>
+                </div>
               </div>
+            </div>
+          </form>
+        </div>
+        <div class="row p-3 mb-5" style="background-color: white">
+          <h2 class="mb-5">
+            <span class="border-bottom border-4 border-dark">Hình thức thanh toán</span>
+          </h2>
+          <div class="card">
+            <div class="card-header bg-white">
+              <div class="py-3">
+                <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill">
+                  <li class="nav-item">
+                    <a
+                      data-toggle="pill"
+                      href="#credit-card"
+                      class="nav-link active d-flex justify-content-center align-items-center card-selected"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-credit-card"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"
+                        />
+                        <path
+                          d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"
+                        />
+                      </svg>
+                      <span class="mx-3">Thẻ tín dụng</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      data-toggle="pill"
+                      href="#paypal"
+                      class="nav-link d-flex justify-content-center align-items-center card-selected"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-paypal"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M14.06 3.713c.12-1.071-.093-1.832-.702-2.526C12.628.356 11.312 0 9.626 0H4.734a.7.7 0 0 0-.691.59L2.005 13.509a.42.42 0 0 0 .415.486h2.756l-.202 1.28a.628.628 0 0 0 .62.726H8.14c.429 0 .793-.31.862-.731l.025-.13.48-3.043.03-.164.001-.007a.351.351 0 0 1 .348-.297h.38c1.266 0 2.425-.256 3.345-.91.379-.27.712-.603.993-1.005a4.942 4.942 0 0 0 .88-2.195c.242-1.246.13-2.356-.57-3.154a2.687 2.687 0 0 0-.76-.59l-.094-.061ZM6.543 8.82a.695.695 0 0 1 .321-.079H8.3c2.82 0 5.027-1.144 5.672-4.456l.003-.016c.217.124.4.27.548.438.546.623.679 1.535.45 2.71-.272 1.397-.866 2.307-1.663 2.874-.802.57-1.842.815-3.043.815h-.38a.873.873 0 0 0-.863.734l-.03.164-.48 3.043-.024.13-.001.004a.352.352 0 0 1-.348.296H5.595a.106.106 0 0 1-.105-.123l.208-1.32.845-5.214Z"
+                        />
+                      </svg>
+                      <span class="mx-3">Paypal</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content">
+                <div id="credit-card" class="tab-pane fade show active pt-3">
+                  <form role="form">
+                    <div class="form-group mb-3">
+                      <label for="Select Your Bank">
+                        <h6>Chọn ngân hàng</h6>
+                      </label>
+                      <select class="form-control" id="ccmonth">
+                        <option value="" selected disabled>--Hãy chọn ngân hàng của bạn--</option>
+                        <option>Agribank</option>
+                        <option>Vietcombank</option>
+                        <option>HD Bank</option>
+                        <option>Vietinbank</option>
+                        <option>BIDV</option>
+                        <option>Saccombank</option>
+                      </select>
+                    </div>
+                    <div class="form-group mb-3">
+                      <label for="username">
+                        <h6>Tên chủ thẻ</h6>
+                      </label>
+                      <input
+                        type="text"
+                        name="username"
+                        placeholder="Hãy nhập tên chủ thẻ"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                    <div class="form-group mb-3">
+                      <label for="cardNumber">
+                        <h6>Số thẻ</h6>
+                      </label>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          name="cardNumber"
+                          placeholder="Hãy nhập số thẻ"
+                          class="form-control"
+                          required
+                        />
+                        <div class="input-group-append">
+                          <span class="input-group-text text-muted h-100">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-credit-card"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"
+                              />
+                              <path
+                                d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"
+                              />
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group mb-3">
+                        <label>
+                          <span class="hidden-xs">
+                            <h6>Ngày hết hạn</h6>
+                          </span>
+                        </label>
+                        <div class="input-group">
+                          <input
+                            type="number"
+                            placeholder="MM"
+                            name=""
+                            class="form-control"
+                            required
+                          />
+                          <input
+                            type="number"
+                            placeholder="YY"
+                            name=""
+                            class="form-control"
+                            required
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="form-group">
+                        <button type="button" class="btn btn-primary">Xác nhận thanh toán</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div id="paypal" class="tab-pane fade show pt-3">
+                  <h6 class="pb-2">Chọn loại tài khoản Paypal thanh toán</h6>
+                  <div class="form-group mb-3">
+                    <label class="radio-inline pe-3">
+                      <input type="radio" name="optradio" checked />Nội địa
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio" class="ml-5" />Quốc tế
+                    </label>
+                  </div>
+                  <p>
+                    <button type="button" class="btn btn-primary">
+                      <i class="fab fa-paypal mr-2"></i>Đăng nhập vào Paypal
+                    </button>
+                  </p>
+                  <p class="text-muted">
+                    Lưu ý: Sau khi nhấn vào nút Đăng nhập vào Paypal, bạn sẽ được chuyển đến cổng
+                    bảo vệ cho thẻ. Sau khi hoàn thành tiến trình thanh toán, bạn sẽ được chuyển
+                    hướng trở về trang chi tiết đơn hàng của bạn.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-       
-          <div class ="col-md-2 text-center text-md-start">
-             <div>Số Lượng</div>
-             <div>2</div>
-          </div>
-          <div class ="col-md-2 text-center text-md-end">
-            <div class="" >Thành tiền</div>
-            <div class="" >₫988.000.00</div>
-          </div>
         </div>
-      </div>
-
-      <div class="row  mt-2" style="background-color: white;">
-        <div class="col-sm-4 bg-body mt-0 d-flex align-items-center" style="border: 1px dashed rgba(0,0,0,.09)">
-          <span class="float-sm-start ">Lời nhắn:</span>
-          <input class="c1\+TQt m-1" type="text" placeholder="Lưu ý cho shop" name="" id="">
-        </div>
-        <div class="col-md-2 text-center text-md-start" style="color: #00bfa5">Đơn vị vận chuyển</div>
-        <div class="col-md-2 text-center text-md-start">
-          <div>Nhanh</div>
-          <div class="" style="color: #888">Nhận hàng vào 19 Th03 - 22 Th03</div>
-        </div>
-        <div class="col-md-2 text-center text-md-start">
-          <a style="color: #05a">THAY ĐỔI</a>
-        </div>
-        <div class="col-md-2 text-center text-md-end ">
-          <div class="">₫20.000.00</div>
-        </div>
-      </div>
-     
-            
-      <div class="row  " style="background-color: white; border: 1px dashed rgba(0,0,0,.09)">
-        <div class="col-md-12 text-center text-md-end">
-            <div class="">Tổng số tiền(2 sản phẩm)</div>
-            <div class="">₫118.000.00</div>
-        </div>
-      </div>
-      
-      <div class="row justify-content-center p-3 mt-3" style="background-color: white;border-bottom: 1px dashed rgba(0,0,0,.09);" >
-        <div class ="col-md-8 ">
-          <div>Phương thức thanh toán</div>
-        </div>
-        <div class ="col-md-2 ">
-           <div>Thanh toán khi nhận hàng</div>
-        </div>
-        <div class ="col-md-2 ">
-          <div class=" mb-0 ms-4 me-3 _3WkjWD float-sm-end">Thay đổi</div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center p-3 mt-0" style="background-color: rgb(255,254,251);" >
-        <div class ="col-md-8 ">
-          <div></div>
-        </div>
-        <div class ="col-md-2  text-center">
-           <div class = " opacity_text ">Tổng tiền hàng</div>
-        </div>
-        <div class ="col-md-2   text-center text-sm-end">
-          <div class=" ">₫998.000.00</div>
-        </div>
-      </div>
-
-
-      <div class="row  p-3 mt-0" style="background-color: rgb(255,254,251);" >
-        <div class ="col-md-8 ">
-          <div></div>
-        </div>
-        <div class =" col-md-2  ">
-           <div class="  opacity_text">Phí vận chuyển</div>
-        </div>
-        <div class =" col-md-2  text-center text-sm-end">
-          <div class=" ms-7 ">₫20.000.00</div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center p-3 mt-0" style="background-color: rgb(255,254,251);" >
-        <div class ="col-md-8 text-center">
-          <div></div>
-        </div>
-        <div class ="col-md-2 text-center">
-           <div class="  opacity_text">Tổng thanh toán</div>
-        </div>
-        <div class ="col-md-2 text-center text-sm-end">
-          <div class="fs-2">₫118.000.00</div>
-        </div>
-      </div>
-
-      <!--<div class="row justify-content-center p-3 mt-0" style="background-color: rgb(255,254,251);border-bottom: 1px dashed rgba(0,0,0,.09);" >
-        <div class="col-md-8"></div>
-        <div class ="col-md-2 ">
-          <div class="opacity_text">Tổng tiền hàng</div>
-          <div class="opacity_text">Phí vận chuyển</div>
-          <div class="opacity_text mt-3">Tổng thanh toán</div>
-        </div>
-        <div class ="col-md-2 ">
-          <div class="me-3" style="text-align: right;">₫998.000.00</div>
-          <div class="me-3" style="text-align: right;">₫20.000.00</div>
-          <div class=" mb-0 ms-4 me-3  float-sm-end">₫118.000.00</div>
-        </div>
-      </div> 
-      -->
-      
-      <div class="row justify-content-end p-3 mt-0 " style="background-color: white;border-bottom: 1px dashed rgba(0,0,0,.09);" >
-        <button class="nutDatHang me-3" >Đặt hàng</button>
-      
-      
-      
-
-            
-            
-
-            
-        
       </div>
     </main>
     <footer class="footer">
-        <div class="footer__top">
-          <div class="container">
-            <div class="row d-flex justify-content-evenly">
-              <div class="col col-lg-3">
-                <a class="navbar-brand" href="#">
-                  <img src="../img/img-logo.png" alt="Logo" width="250" height="80" />
-                </a>
-              </div>
-              <div class="col col-lg-3">
-                <div class="row d-flex justify-content-center">
-                  <div class="col col-lg-1 px-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-geo-alt-fill"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-                      />
-                    </svg>
-                  </div>
-                  <div class="col col-lg-11 px-0">
-                    <p class="mb-0">Địa chỉ:</p>
-                    <p class="mb-0">
-                      Tầng 4, lầu A, Trường ĐH Công Nghiệp TPHCM, 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp,
-                      Thành phố Hồ Chí Minh
-                    </p>
-                  </div>
+      <div class="footer__top">
+        <div class="container">
+          <div class="row d-flex justify-content-evenly">
+            <div class="col col-lg-3">
+              <a class="navbar-brand" href="#">
+                <img src="../img/img-logo.png" alt="Logo" width="250" height="80" />
+              </a>
+            </div>
+            <div class="col col-lg-3">
+              <div class="row d-flex justify-content-center">
+                <div class="col col-lg-1 px-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-geo-alt-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                    />
+                  </svg>
+                </div>
+                <div class="col col-lg-11 px-0">
+                  <p class="mb-0">Địa chỉ:</p>
+                  <p class="mb-0">
+                    Tầng 4, lầu A, Trường ĐH Công Nghiệp TPHCM, 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp,
+                    Thành phố Hồ Chí Minh
+                  </p>
                 </div>
               </div>
-              <div class="col col-lg-3">
-                <div class="row">
-                  <div class="col col-lg-1 px-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-telephone"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-                      />
-                    </svg>
-                  </div>
-                  <div class="col col-lg-11 px-0">
-                    <p class="mb-0">Điện thoại:</p>
-                    <p class="mb-0">1900.561.275</p>
-                  </div>
+            </div>
+            <div class="col col-lg-3">
+              <div class="row">
+                <div class="col col-lg-1 px-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-telephone"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                    />
+                  </svg>
+                </div>
+                <div class="col col-lg-11 px-0">
+                  <p class="mb-0">Điện thoại:</p>
+                  <p class="mb-0">1900.561.275</p>
                 </div>
               </div>
-              <div class="col col-lg-3">
-                <div class="row d-flex justify-content-center">
-                  <div class="col col-lg-1 px-0">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-envelope"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
-                      />
-                    </svg>
-                  </div>
-                  <div class="col col-lg-11 px-0">
-                    <p class="mb-0">Email:</p>
-                    <p class="mb-0">hoangnguyen@info.com</p>
-                    <p class="mb-0">tungnguyen@info.com</p>
-                  </div>
+            </div>
+            <div class="col col-lg-3">
+              <div class="row d-flex justify-content-center">
+                <div class="col col-lg-1 px-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                    />
+                  </svg>
+                </div>
+                <div class="col col-lg-11 px-0">
+                  <p class="mb-0">Email:</p>
+                  <p class="mb-0">hoangnguyen@info.com</p>
+                  <p class="mb-0">tungnguyen@info.com</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer__bottom">
-          <div class="container">
-            <p class="mb-0">
-              Copyright &copy; 2023 HOGWARTS Fashion. Powered by Hoang Nguyen and Tung Nguyen.
-            </p>
-          </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <p class="mb-0">
+            Copyright &copy; 2023 HOGWARTS Fashion. Powered by Hoang Nguyen and Tung Nguyen.
+          </p>
         </div>
-      </footer>
-    
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
