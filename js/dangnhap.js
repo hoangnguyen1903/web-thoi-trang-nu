@@ -4,8 +4,6 @@ $(document).ready(function () {
     let flagEmail = false;
     let flagPassword = false;
     accountList.each(function () {
-      $(this).children('.status').removeClass('text-success');
-
       if ($(this).children('.email').text() === email) {
         flagEmail = true;
         if ($(this).children('.password').text() === password) {

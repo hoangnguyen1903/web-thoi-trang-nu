@@ -36,6 +36,18 @@ $(document).ready(function () {
       imgUrl: '../img/img-pant-6.1.jpeg',
       price: 599.0,
     },
+    {
+      id: 7,
+      name: 'ĐẦM NGẮN NHÚN NGỰC IN HOA',
+      imgUrl: '../img/img-dress-5.1.jpeg',
+      price: 599.0,
+    },
+    {
+      id: 8,
+      name: 'ĐẦM NHÚN NGỰC XOÈ BẸT VAI',
+      imgUrl: '../img/img-dress-6.1.jpeg',
+      price: 599.0,
+    },
   ];
   let newDress = [
     {
@@ -55,6 +67,12 @@ $(document).ready(function () {
       name: 'ĐẦM NGẮN 2 TẦNG NGỰC XẾP',
       imgUrl: '../img/img-dress-3.1.jpeg',
       price: 649.0,
+    },
+    {
+      id: 4,
+      name: 'ĐẦM 2 DÂY DÀI BUỘC NƠ VAI',
+      imgUrl: '../img/img-dress-4.1.jpeg',
+      price: 599.0,
     },
   ];
 

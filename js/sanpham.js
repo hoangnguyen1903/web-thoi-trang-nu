@@ -158,7 +158,7 @@ function taoDanhSachSanPham(option = 'Áo') {
   if (option === 'Áo') {
     shirtList.filter((item, idx) => {
       $('.product__list').append(`
-          <div class="col col-lg-4 mb-4 product">
+          <div class="col col-lg-4 col-sm-6 col-12 d-flex justify-content-center mb-4 product">
             <div class="card" style="width: 18rem; height: 460px">
               <img src=${item.imgUrl} class="card-img-top" alt="Áo ${idx + 1}" />
               <div class="card-body d-flex flex-column justify-content-between">
