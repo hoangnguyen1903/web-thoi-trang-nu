@@ -87,7 +87,6 @@ $(document).ready(function () {
       checkPassword(password) === false ||
       retypePass !== password
     ) {
-      alert('Bạn đã nhập sai thông tin và yêu cầu nhập lại!');
       return;
     }
     $('.table tbody').append(`
@@ -98,7 +97,26 @@ $(document).ready(function () {
 			<td>${password}</td>
 		</tr>
 		`);
-    alert('Bạn đã đăng ký thành công!');
+    $('.nameErr').removeClass('text-danger');
+    $('.nameErr').removeClass('text-success');
+    $('.nameErr').text('');
+    $('#txtName').val('');
+
+    $('.emailErr').removeClass('text-danger');
+    $('.emailErr').removeClass('text-success');
+    $('.emailErr').text('');
+    $('#txtEmail').val('');
+
+    $('.passwordErr').removeClass('text-danger');
+    $('.passwordErr').removeClass('text-success');
+    $('.passwordErr').text('');
+    $('#txtPassword').val('');
+
+    $('.retypePassErr').removeClass('text-danger');
+    $('.retypePassErr').removeClass('text-success');
+    $('.retypePassErr').text('');
+    $('#retypePass').val('');
+    $('.myModal').modal('hide');
   });
 
   $('.btn-reset').click(function (e) {

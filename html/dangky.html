@@ -120,7 +120,7 @@
           </div>
           <div class="row d-flex justify-content-between pb-5">
             <div
-              class="col col-lg-7 col-sm-12 border border-1 border-dark rounded p-5 mb-4 d-none d-sm-block"
+              class="col col-lg-12 col-sm-12 border border-1 border-dark rounded p-5 mb-4 d-none d-sm-block"
             >
               <table class="table table-hover">
                 <thead>
@@ -141,71 +141,105 @@
                 </tbody>
               </table>
             </div>
-            <div class="col col-lg-4 col-sm-12 border border-1 border-dark rounded p-5">
-              <h2 class="text-center mb-5">ĐĂNG KÝ</h2>
+            <div class="col col-lg-12 col-sm-12">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Đăng ký
+              </button>
+            </div>
+            <div
+              class="modal fade myModal"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ĐĂNG KÝ</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-outline mb-3">
+                        <label class="form-label" for="txtName">Họ và tên</label>
+                        <input
+                          type="text"
+                          id="txtName"
+                          class="form-control"
+                          placeholder="Hãy nhập họ và tên của bạn"
+                          required
+                        />
+                        <p class="nameErr mb-0 mt-2"></p>
+                      </div>
+                      <div class="form-outline mb-3">
+                        <label class="form-label" for="txtEmail">Tên đăng nhập</label>
+                        <input
+                          type="email"
+                          id="txtEmail"
+                          class="form-control"
+                          placeholder="Hãy nhập địa chỉ email của bạn"
+                          required
+                        />
+                        <p class="emailErr mb-0 mt-2"></p>
+                      </div>
 
-              <form>
-                <div class="form-outline mb-3">
-                  <label class="form-label" for="txtName">Họ và tên</label>
-                  <input
-                    type="text"
-                    id="txtName"
-                    class="form-control"
-                    placeholder="Hãy nhập họ và tên của bạn"
-                    required
-                  />
-                  <p class="nameErr mb-0 mt-2"></p>
-                </div>
-                <div class="form-outline mb-3">
-                  <label class="form-label" for="txtEmail">Tên đăng nhập</label>
-                  <input
-                    type="email"
-                    id="txtEmail"
-                    class="form-control"
-                    placeholder="Hãy nhập địa chỉ email của bạn"
-                    required
-                  />
-                  <p class="emailErr mb-0 mt-2"></p>
-                </div>
+                      <div class="form-outline mb-3">
+                        <label class="form-label" for="txtPassword">Mật khẩu</label>
+                        <input
+                          type="password"
+                          id="txtPassword"
+                          class="form-control"
+                          placeholder="Hãy nhập mật khẩu của bạn"
+                          required
+                        />
+                        <p class="passwordErr mb-0 mt-2"></p>
+                      </div>
 
-                <div class="form-outline mb-3">
-                  <label class="form-label" for="txtPassword">Mật khẩu</label>
-                  <input
-                    type="password"
-                    id="txtPassword"
-                    class="form-control"
-                    placeholder="Hãy nhập mật khẩu của bạn"
-                    required
-                  />
-                  <p class="passwordErr mb-0 mt-2"></p>
-                </div>
+                      <div class="form-outline mb-3">
+                        <label class="form-label" for="retypePass">Nhập lại mật khẩu</label>
+                        <input
+                          type="password"
+                          id="retypePass"
+                          class="form-control"
+                          placeholder="Hãy nhập lại mật khẩu của bạn"
+                          required
+                        />
+                        <p class="retypePassErr mb-0 mt-2"></p>
+                      </div>
+                      <input
+                        type="submit"
+                        value="Đăng ký"
+                        class="btn btn-primary btn-block mb-4 btn-submit"
+                      />
+                      <input
+                        type="reset"
+                        value="Reset"
+                        class="btn btn-primary btn-block mb-4 btn-reset"
+                      />
 
-                <div class="form-outline mb-3">
-                  <label class="form-label" for="retypePass">Nhập lại mật khẩu</label>
-                  <input
-                    type="password"
-                    id="retypePass"
-                    class="form-control"
-                    placeholder="Hãy nhập lại mật khẩu của bạn"
-                    required
-                  />
-                  <p class="retypePassErr mb-0 mt-2"></p>
+                      <div class="text-center">
+                        <p>Đã có tài khoản ? <a href="../html/dangnhap.html">Đăng nhập</a></p>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
                 </div>
-                <input
-                  type="submit"
-                  value="Đăng ký"
-                  class="btn btn-primary btn-block mb-4 btn-submit"
-                />
-                <input
-                  type="reset"
-                  value="Reset"
-                  class="btn btn-primary btn-block mb-4 btn-reset"
-                />
-
-                <div class="text-center">
-                  <p>Đã có tài khoản ? <a href="../html/dangnhap.html">Đăng nhập</a></p>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>

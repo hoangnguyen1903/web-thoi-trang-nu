@@ -42,12 +42,19 @@ $(document).ready(function () {
     e.preventDefault();
     let email = $('#txtEmail').val();
     let password = $('#txtPassword').val();
-    console.log(checkAccount(email, password));
+
     if (checkAccount(email, password) === false) {
-      alert('Bạn đã đăng nhập thất bại! Tên đăng nhập hoặc mật khẩu không chính xác');
       return;
     }
 
-    alert('Bạn đã đăng nhập thành công!');
+    $('.emailErr').text('');
+    $('.emailErr').removeClass('text-success');
+    $('.emailErr').removeClass('text-danger');
+
+    $('.passwordErr').text('');
+    $('.passwordErr').addClass('text-success');
+    $('.passwordErr').addClass('text-danger');
+
+    $('.myModal').modal('hide');
   });
 });
